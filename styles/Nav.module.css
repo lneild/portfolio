@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
+
+.nav {
+    z-index: 4;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    transition: 0.5s top;
+}
+
+.content {
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 10px;
+    align-items: center;
+    height: 100%;
+    padding: 5px;
+}
+
+.section {
+    all: unset;
+    text-transform: uppercase;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+    font-family: "Exo", sans-serif;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 22px;
+    font-weight: bolder;
+}
+
+.section:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.6s ease-out;
+}
+
+.section:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+@media only screen and (max-width: 1200px) {
+    .center {
+        display: none;
+    }
+}
