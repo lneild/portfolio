@@ -1,52 +1,82 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Exo:wght@500&family=Josefin+Sans&family=Lato&display=swap");
 
 .aboutMe {
-    border: 6px solid navy;
-    position: relative;
-}
-
-.pic {
-    z-index: -1;
     position: relative;
     height: 100vh;
-    width: 1500px;
-    margin: 0px;
-    padding: 0px;
+    width: 100vw;
+    overflow: hidden;
+    background-color: rgb(217, 228, 227, 0.7);
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
 }
 
-.circle {
-    background-color: rgb(32, 42, 68, 0.4);
-    /* animation: blink 1s ease infinite alternate-reverse; */
-    position: absolute;
-    top: 5%;
-    left: 5%;
-    width: fit-content;
-    padding: 100px;
-    padding-right: 20px;
-    padding-left: 20px;
-    height: double-width;
-    /* line-height: 200px; */
-    border-radius: 50%;
-    text-align: center;
-}
-
-.circle:hover {
-    background-color: rgb(32, 42, 68, 0.4);
-}
-
-/* @keyframes blink {
-    from {
-        opacity: 80%;
-    }
-
-    to {
-        opacity: 50%;
-    }
-} */
-
-.heading {
+.title {
     font-family: "Exo", sans-serif;
+    height: 10vh;
     letter-spacing: 10px;
-    color: white;
-    font-size: 30px;
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 100vw;
+    text-align: center;
+    color: rgb(24, 86, 106);
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+.timelineWrap {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+    width: 100%;
+}
+
+.timeline {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.timelineWrap:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    border-top: 7px dotted rgb(24, 86, 106);
+    width: 100%;
+    transform: translateY(-50%);
+}
+
+.event {
+    cursor: pointer;
+    height: 20vw;
+    width: 20vw;
+    border-radius: 50%;
+    border: 7px solid rgb(24, 86, 106);
+    background-color: rgb(217, 228, 227);
+    transition: 0.25s ease-out;
+    font-family: "Exo", sans-serif;
+    letter-spacing: 3px;
+    font-size: 2.6vw;
+    color: rgb(24, 86, 106);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event:hover {
+    border: 7px solid rgb(217, 228, 227);
+    background-color: rgb(24, 86, 106);
+    font-size: 3vw;
+    color: rgb(217, 228, 227);
 }
