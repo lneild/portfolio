@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Exo:wght@500&family=Josefin+Sans&family=Lato&display=swap");
+
+.pic {
+    z-index: 1;
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+}
+
+.connect {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(217, 228, 227, 0.6);
+    z-index: 2;
+}
+
+.title {
+    font-family: "Exo", sans-serif;
+    height: 10vh;
+    letter-spacing: 10px;
+    font-size: 60px;
+    padding-top: 25px;
+    padding-bottom: 5px;
+    width: 100vw;
+    text-align: center;
+    color: rgb(24, 86, 106);
+    z-index: 2;
+}
+
+.content {
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.socialContainer {
+    position: relative;
+    border: 12px dotted rgb(24, 86, 106);
+    border-radius: 50%;
+    width: 65vh;
+    height: 65vh;
+}
+
+.social {
+    position: absolute;
+    left: calc(50% - 25px);
+    top: calc(50% - 25px);
+    height: 18vh;
+    width: 18vh;
+    border-radius: 50%;
+    border: 7px solid rgb(24, 86, 106);
+    background-color: rgb(217, 228, 227);
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    transition: 0.3s ease-out;
+}
+
+.social:nth-child(1) {
+    transform: translate(19vh, 12vh);
+}
+
+.social:nth-child(2) {
+    transform: translate(-33vh, 12vh);
+}
+
+.social:nth-child(3) {
+    transform: translate(19vh, -32vh);
+}
+
+.social:nth-child(4) {
+    transform: translate(-33vh, -32vh);
+}
+
+.icon1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 1;
+}
+.icon2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.social:hover {
+    border: 7px solid rgb(217, 228, 227);
+    background-color: rgb(24, 86, 106);
+}
+
+.social:hover > .icon1 {
+    opacity: 0;
+}
+.social:hover > .icon2 {
+    opacity: 1;
+}
+
+@media screen and (max-width: 940px) {
+    .socialContainer {
+        width: 65vw;
+        height: 65vw;
+    }
+
+    .social {
+        height: 18vw;
+        width: 18vw;
+    }
+
+    .social:nth-child(1) {
+        transform: translate(19vw, 12vw);
+    }
+
+    .social:nth-child(2) {
+        transform: translate(-33vw, 12vw);
+    }
+
+    .social:nth-child(3) {
+        transform: translate(19vw, -32vw);
+    }
+
+    .social:nth-child(4) {
+        transform: translate(-33vw, -32vw);
+    }
+}
