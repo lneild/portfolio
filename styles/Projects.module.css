@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Exo:wght@500&family=Josefin+Sans&family=Lato&display=swap");
+
+.experience {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    max-height: fit-content;
+}
+
+.pic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.content {
+    align-items: center;
+    overflow: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-family: "Exo", sans-serif;
+    height: 10vh;
+    letter-spacing: 10px;
+    font-size: 60px;
+    padding-top: 25px;
+    width: 100vw;
+    text-align: center;
+    color: rgb(24, 86, 106);
+    z-index: 0;
+}
+
+.projects {
+    width: 95%;
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50px;
+    justify-content: center;
+}
+
+.card {
+    transition: 0.5s ease;
+    -webkit-transition: 0.5s ease;
+    margin: 20px;
+}

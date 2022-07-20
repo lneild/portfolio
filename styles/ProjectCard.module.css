@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400&family=Exo:wght@500&family=Josefin+Sans&family=Lato&display=swap");
+
+.projectCard {
+    cursor: pointer;
+    width: fill;
+    height: fill;
+    margin: 1.8vw;
+    transition: 0.35s ease-out;
+    -webkit-transition: 0.35s ease;
+}
+
+.backgroundPic {
+    position: relative;
+    width: 28vw;
+    min-height: 30vw;
+    overflow: hidden;
+    border: 10px solid white;
+}
+
+.bottomLabel {
+    position: relative;
+    border: 10px solid white;
+    height: 4.3vw;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.title,
+.date {
+    padding: 5px;
+    width: fit-content;
+    margin-top: 5px;
+    font-family: "Exo", sans-serif;
+    letter-spacing: 3px;
+    font-size: 2vw;
+    color: rgb(24, 86, 106);
+}
+
+.projectCard:hover {
+    transform: scale(1.05);
+}
