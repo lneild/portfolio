@@ -1,0 +1,35 @@
+.container {
+    position: relative;
+    cursor: pointer;
+}
+
+.btn svg {
+    margin: 0;
+    padding: 0;
+    width: 160px;
+    height: 60px;
+}
+
+.btn svg rect {
+    stroke-width: 5;
+    stroke-dasharray: 300, 0;
+    stroke-dashoffset: 0;
+    -webkit-transition: all 800ms ease;
+    transition: all 800ms ease;
+}
+.container:hover svg rect {
+    stroke-width: 5;
+    stroke-dasharray: 170, 220;
+    stroke-dashoffset: 190;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Exo", sans-serif;
+    font-size: 18px;
+    letter-spacing: 4px;
+    color: rgb(217, 228, 227);
+}
