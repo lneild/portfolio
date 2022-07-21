@@ -1,0 +1,14 @@
+.container {
+    width: 30vw;
+    height: 40vh;
+    border: 2px solid yellow;
+    padding: 0px;
+    margin: 0px;
+}
+
+.container pre {
+    margin: 0em !important;
+    border-radius: 15px;
+    border: 1px solid green;
+    min-height: 38vh;
+}
