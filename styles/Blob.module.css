@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+.blob {
+    background-color: rgb(3, 194, 159);
+    color: white;
+    max-width: 30vw;
+    max-height: 30vw;
+    border-radius: 77% 96% 57% 91% / 63% 86% 100% 86%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 2vw;
+}
