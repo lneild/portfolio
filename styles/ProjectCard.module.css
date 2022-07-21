@@ -21,7 +21,8 @@
 .bottomLabel {
     position: relative;
     border: 10px solid white;
-    height: 4.3vw;
+    border-top: 0;
+    height: 4.5vw;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -32,7 +33,6 @@
 .date {
     padding: 5px;
     width: fit-content;
-    margin-top: 5px;
     font-family: "Exo", sans-serif;
     letter-spacing: 3px;
     font-size: 2vw;
