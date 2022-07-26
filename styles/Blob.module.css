@@ -1,18 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 .blob {
     background-color: rgb(3, 194, 159);
     color: white;
-    max-width: 30vw;
-    max-height: 30vw;
+    min-width: fit-content;
+    width: 35vw;
+    height: fit-content;
+    max-height: 70vh;
     border-radius: 77% 96% 57% 91% / 63% 86% 100% 86%;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    padding: 10px;
+    padding: 100px;
 }
 
 .text {
-    font-family: "Open Sans", sans-serif;
-    font-size: 2vw;
+    font-size: 1.6vw;
+    line-height: 2.6vw;
+    color: white;
+    letter-spacing: 2px;
+    font-family: "Montserrat", sans-serif;
+}
+
+@media (max-aspect-ratio: 8/9) {
+    .blob {
+        max-width: 33vw;
+        max-height: 60vh;
+        overflow: scroll;
+        padding: 100px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
 }
