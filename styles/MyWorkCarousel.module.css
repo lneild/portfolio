@@ -1,0 +1,11 @@
+.eachSlide {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-bottom: 32px;
+}
+
+.blobDiv {
+    display: flex;
+    align-items: center;
+}
