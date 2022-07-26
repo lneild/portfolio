@@ -4,7 +4,6 @@ import Button from "../components/Button";
 import Polaroid from "./Polaroid";
 
 export default function Popup(props) {
-    console.log(props);
     return (
         <div className={styles.viewWindow}>
             <div className={styles.card}>
