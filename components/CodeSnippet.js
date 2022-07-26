@@ -3,15 +3,7 @@ import styles from "../styles/CodeSnippet.module.css";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import { oneDark } from "react-syntax-highlighter/dist/cjs/styles/prism";
 
-const exampleSQL = `select * from tableX`;
-const exampleJS = `const show = () => {
-    console.log("hey")}`;
-const exampleJsx = `export default function test () {
-    return <div>Test</div>
-}`;
-const codeString = "(num) => num + 1";
-
-export default function CodeSnippet() {
+export default function CodeSnippet(props) {
     return (
         <div className={styles.container}>
             <SyntaxHighlighter
@@ -20,7 +12,7 @@ export default function CodeSnippet() {
                 showLineNumbers
                 style={oneDark}
             >
-                {exampleSQL}
+                {props.code}
             </SyntaxHighlighter>
         </div>
     );
