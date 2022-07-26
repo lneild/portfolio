@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Connect.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 import Link from "next/Link";
 
 export default function Connect() {

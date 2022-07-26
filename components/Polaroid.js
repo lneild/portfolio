@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/Polaroid.module.css";
-import Image from "next/Image";
+import Image from "next/image";
 
 export default function Polaroid(props) {
     return (
