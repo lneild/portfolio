@@ -1,12 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/Image";
 import styles from "../styles/Ligo.module.css";
-import Blob from "../components/Blob.js";
+import MyWorkCarousel from "../components/MyWorkCarousel";
 
 export default function ligo() {
     return (
-        <div className={styles.ligo}>
-            <div className={styles.header}>
+        <div id="ligo" className={styles.ligo}>
+            <div id="header" className={styles.header}>
                 <div className={styles.logo}>
                     <Image
                         src="/Ligo_logo.png"
@@ -18,7 +18,7 @@ export default function ligo() {
                 </div>
             </div>
             <div className={styles.myWork}>
-                {/* <Blob description="here is some cool shit i did" /> */}
+                <MyWorkCarousel />
             </div>
         </div>
     );
