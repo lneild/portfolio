@@ -1,0 +1,8 @@
+.codeSection {
+    height: 71vh;
+    overflow: scroll;
+    background-color: rgb(3, 194, 159);
+    padding: 15px;
+    width: 54.5vw;
+    border-radius: 15px;
+}
