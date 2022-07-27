@@ -37,7 +37,6 @@
 .description {
     color: white;
     font-family: "Montserrat", sans-serif;
-    margin: 10px;
     margin-left: 25px;
     margin-right: 25px;
 }
@@ -55,7 +54,7 @@
     font-size: 24px;
     line-height: 32px;
     letter-spacing: 2px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .keyTool {
