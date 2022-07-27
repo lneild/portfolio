@@ -26,6 +26,11 @@
     height: 50vh;
     z-index: 2;
     opacity: 0.25;
+    transition: opacity 150ms ease-out;
+}
+
+.hidden {
+    opacity: 0;
 }
 
 .workTitle,
