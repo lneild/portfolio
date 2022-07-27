@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "../styles/CodePopup.module.css";
-import CodeSnippet from "../components/CodeSnippet";
+import CodeSnippet from "./CodeSnippet";
 
 const revenue = `select
   sum(p.payable_price) as amount,

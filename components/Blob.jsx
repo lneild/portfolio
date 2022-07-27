@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Blob.module.css";
-import CodePopup from "../components/CodePopup";
+import CodePopup from "./CodePopup";
 
 const revenue = `
 select

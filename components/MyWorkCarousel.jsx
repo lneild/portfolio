@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import styles from "../styles/MyWorkCarousel.module.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
-import Blob from "./Blob.js";
-import ChartDisplay from "./ChartDisplay.js";
+import Blob from "./Blob.jsx";
+import ChartDisplay from "./ChartDisplay.jsx";
 import CodeCard from "./CodeCard";
 import ReactCardFlip from "react-card-flip";
 

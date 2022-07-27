@@ -19,15 +19,13 @@
 }
 
 .photo {
-    border: 2px solid white;
     position: absolute;
-    top: 0px;
+    top: 40px;
     right: 30px;
     width: 30vw;
-    height: 55vh;
-    z-index: 1;
-    opacity: 0;
-    transition: 0.2s ease-out;
+    height: 50vh;
+    z-index: 2;
+    opacity: 0.25;
 }
 
 .workTitle,
@@ -56,15 +54,13 @@
 }
 
 .keyTool {
-    z-index: 4;
     color: rgb(3, 194, 159);
     font-size: 28px;
     cursor: default;
 }
 
-.keyTool:hover ~ .photo {
-    color: white;
-    opacity: 0.2;
+.keyTool:hover {
+    z-index: 3;
 }
 
 .header {

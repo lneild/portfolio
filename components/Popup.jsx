@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/Popup.module.css";
-import Button from "../components/Button";
+import Button from "./Button";
 import Polaroid from "./Polaroid";
 
 export default function Popup(props) {

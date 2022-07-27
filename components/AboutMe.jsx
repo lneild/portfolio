@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import styles from "../styles/AboutMe.module.css";
-import Popup from "../components/Popup";
+import Popup from "./Popup";
 import Image from "next/image";
 
 const popupData = {
