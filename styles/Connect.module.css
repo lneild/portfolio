@@ -4,6 +4,7 @@
 .pic {
     z-index: 1;
     min-height: 100vh;
+    height: fit-content;
     min-width: 100vw;
     position: absolute;
 }
@@ -12,6 +13,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
+    overflow-y: scroll;
     background-color: rgb(217, 228, 227, 0.6);
     z-index: 2;
 }
@@ -27,6 +29,7 @@
     text-align: center;
     color: rgb(24, 86, 106);
     z-index: 2;
+    margin-bottom: 30px;
 }
 
 .content {
@@ -41,6 +44,9 @@
 
 .socialContainer {
     position: relative;
+    top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
     border: 12px dotted rgb(24, 86, 106);
     border-radius: 50%;
     width: 65vh;
@@ -51,6 +57,10 @@
     position: absolute;
     left: calc(50% - 25px);
     top: calc(50% - 25px);
+    /* position: relative; */
+    /* display: flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     height: 18vh;
     width: 18vh;
     border-radius: 50%;
@@ -63,19 +73,19 @@
 }
 
 .social:nth-child(1) {
-    transform: translate(19vh, 12vh);
+    transform: translate(26vh, -7vh);
 }
 
 .social:nth-child(2) {
-    transform: translate(-33vh, 12vh);
+    transform: translate(-3vh, 25vh);
 }
 
 .social:nth-child(3) {
-    transform: translate(19vh, -32vh);
+    transform: translate(-36vh, -7vh);
 }
 
 .social:nth-child(4) {
-    transform: translate(-33vh, -32vh);
+    transform: translate(-3vh, -35vh);
 }
 
 .icon1 {
@@ -117,18 +127,18 @@
     }
 
     .social:nth-child(1) {
-        transform: translate(19vw, 12vw);
+        transform: translate(26vw, -7vw);
     }
 
     .social:nth-child(2) {
-        transform: translate(-33vw, 12vw);
+        transform: translate(-3vw, 25vw);
     }
 
     .social:nth-child(3) {
-        transform: translate(19vw, -32vw);
+        transform: translate(-36vw, -7vw);
     }
 
     .social:nth-child(4) {
-        transform: translate(-33vw, -32vw);
+        transform: translate(-3vw, -35vw);
     }
 }
