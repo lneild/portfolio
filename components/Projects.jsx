@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Image from "next/image";
-import Link from "next/Link";
+import Link from "next/link";
 import styles from "../styles/Projects.module.css";
 import ProjectCard from "./ProjectCard";
 

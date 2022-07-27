@@ -31,6 +31,7 @@ export default function Ligo() {
                     layout="fill"
                     objectFit="contain"
                     objectPosition={"right top"}
+                    priority
                 />
             </div>
         );
