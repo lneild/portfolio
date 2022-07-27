@@ -45,15 +45,15 @@
 .workTitle {
     margin-top: 20px;
     text-transform: uppercase;
-    font-size: 50px;
+    font-size: 40px;
     letter-spacing: 7px;
     border-bottom: 6px solid rgb(3, 194, 159);
     width: fit-content;
 }
 
 .description {
-    font-size: 25px;
-    line-height: 35px;
+    font-size: 24px;
+    line-height: 32px;
     letter-spacing: 2px;
     margin-bottom: 20px;
 }
