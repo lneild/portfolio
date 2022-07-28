@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varta:wght@400&display=swap");
 
 .hero {
     position: relative;
@@ -19,7 +19,6 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Exo", sans-serif;
     padding: 30px;
     color: white;
     text-align: center;
@@ -39,6 +38,7 @@
     font-size: 70px;
     letter-spacing: 20px;
     margin: 20px;
+    font-family: "Varta", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
