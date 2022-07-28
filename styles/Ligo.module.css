@@ -45,7 +45,7 @@
     margin-top: 20px;
     text-transform: uppercase;
     font-size: 5.7vh;
-    letter-spacing: 1vh;
+    letter-spacing: 0.8vh;
     border-bottom: 0.8vh solid rgb(3, 194, 159);
     width: fit-content;
 }
@@ -110,7 +110,7 @@
 
     .workTitle {
         font-size: 5.7vw;
-        letter-spacing: 1vw;
+        letter-spacing: 0.8vw;
         margin-top: 10px;
         border-bottom: 0.8vw solid rgb(3, 194, 159);
     }

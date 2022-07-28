@@ -141,9 +141,9 @@ inner join (
 ) as purchased on date_calculated = date_paid`;
 
 const revenueGraphs = [
-    { src: "/daily_rev.jpg", alt: "daily-revenue", num: 3 },
-    { src: "/weekly_rev.jpg", alt: "weekly-revenue", num: 3 },
-    { src: "/monthly_rev.jpg", alt: "montly-revenue", num: 3 },
+    { src: "/daily_rev.jpg", alt: "daily-revenue", num: 2.9 },
+    { src: "/weekly_rev.jpg", alt: "weekly-revenue", num: 2.7 },
+    { src: "/monthly_rev.jpg", alt: "montly-revenue", num: 2.7 },
 ];
 const activeMembersGraph = [
     { src: "/members.jpg", alt: "active members", num: 1.9 },
