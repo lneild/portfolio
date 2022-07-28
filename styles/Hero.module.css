@@ -36,6 +36,7 @@
     font-size: 70px;
     letter-spacing: 20px;
     margin: 20px;
+    font-family: "Exo", sans-serif;
 }
 
 @media only screen and (max-width: 600px) {
