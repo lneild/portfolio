@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
-
 .word {
     display: block;
     font-size: 30px;
@@ -14,7 +12,7 @@
 }
 
 .word span::after {
-    content: "";
+    content: " ";
     width: 4px;
     height: 35px;
     background: white;
