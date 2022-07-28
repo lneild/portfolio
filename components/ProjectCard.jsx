@@ -12,6 +12,7 @@ export default function ProjectCard(props) {
                     layout="fill"
                     objectFit="cover"
                     objectPosition="top center"
+                    priority
                 />
             </div>
             <div className={styles.bottomLabel}>

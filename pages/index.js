@@ -17,6 +17,7 @@ export default function Home() {
                         alt="landscape"
                         layout="fill"
                         objectFit="cover"
+                        priority
                     />
                 </div>
 

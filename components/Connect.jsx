@@ -12,6 +12,7 @@ export default function Connect() {
                     alt="Ocean"
                     layout="fill"
                     objectFit="cover"
+                    priority
                 />
             </div>
             <div className={styles.connect}>

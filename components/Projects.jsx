@@ -13,6 +13,7 @@ export default function Projects() {
                     alt="Water"
                     layout="fill"
                     objectFit="cover"
+                    priority
                 />
             </div>
 
