@@ -40,3 +40,11 @@
     letter-spacing: 20px;
     margin: 20px;
 }
+
+@media only screen and (max-width: 600px) {
+    .title {
+        font-size: 12vw;
+        letter-spacing: 3vw;
+        line-height: 19vw;
+    }
+}

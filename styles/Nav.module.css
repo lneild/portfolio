@@ -55,8 +55,21 @@
     transform-origin: bottom left;
 }
 
-@media only screen and (max-width: 1200px) {
-    .center {
-        display: none;
+@media only screen and (max-width: 600px) {
+    .nav {
+        justify-content: center;
+        height: 12vw;
+    }
+
+    .content {
+        justify-content: space-around;
+        margin: 0px;
+        width: 98%;
+        justify-content: space-between;
+    }
+
+    .section {
+        font-size: 3.5vw;
+        letter-spacing: 0.3vw;
     }
 }

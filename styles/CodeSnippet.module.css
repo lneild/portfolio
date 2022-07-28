@@ -1,18 +1,16 @@
 .container {
     width: fit-content;
     width: 100%;
-    height: fit-content;
-    padding: 10px;
-    padding: 0px;
+    height: 100%;
     overflow: scroll;
+    border-radius: 10px;
     margin: 0px;
 }
 
 .container pre {
     margin: 0em !important;
     border-radius: 15px;
-    border: 1px solid green;
-    min-height: 68vh;
+    min-height: 100%;
     margin-right: 20px;
     font-size: 0.75vw;
 }

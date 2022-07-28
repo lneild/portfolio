@@ -9,15 +9,3 @@
     display: flex;
     align-items: center;
 }
-
-.carousel-root {
-    border: 2px solid yellow !important;
-}
-
-.carousel > .carousel-status {
-    border: 4px solid white !important;
-}
-
-button.control-arrow.control-next {
-    border: 4px solid white !important;
-}

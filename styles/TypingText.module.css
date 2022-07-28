@@ -43,3 +43,15 @@
         opacity: 0%;
     }
 }
+
+@media only screen and (max-width: 700px) {
+    .word {
+        font-size: 4.9vw;
+        letter-spacing: 1vw;
+    }
+
+    .word span::after {
+        width: 0.55vw;
+        height: 6.2vw;
+    }
+}

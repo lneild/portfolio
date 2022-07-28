@@ -146,7 +146,7 @@ const revenueGraphs = [
     { src: "/monthly_rev.jpg", alt: "montly-revenue", num: 3 },
 ];
 const activeMembersGraph = [
-    { src: "/members.jpg", alt: "active members", num: 2.1 },
+    { src: "/members.jpg", alt: "active members", num: 1.9 },
 ];
 const churnGraph = [{ src: "/monthly_churn.jpg", alt: "churn", num: 1.9 }];
 const calcGraph = [{ src: "/calculations.jpg", alt: "calculations", num: 1.9 }];

@@ -42,3 +42,29 @@
 .projectCard:hover {
     transform: scale(1.05);
 }
+
+@media only screen and (max-width: 800px) {
+    .backgroundPic {
+        position: relative;
+        width: 37vw;
+        min-height: 50vw;
+        overflow: hidden;
+        border: 1.8vw solid white;
+    }
+
+    .title,
+    .date {
+        padding: 1vw;
+        padding-top: 2vw;
+        width: fit-content;
+        font-family: "Exo", sans-serif;
+        letter-spacing: 0.5vw;
+        font-size: 3.3vw;
+    }
+
+    .bottomLabel {
+        border: 1.8vw solid white;
+        border-top: 0;
+        height: 9vw;
+    }
+}
