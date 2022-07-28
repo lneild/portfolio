@@ -38,7 +38,7 @@ export default function Projects() {
                             />
                         </div>
                     </Link>
-                    <div className={styles.card}>
+                    {/* <div className={styles.card}>
                         <ProjectCard
                             title="Ligo"
                             date="'22"
@@ -51,7 +51,7 @@ export default function Projects() {
                             date="'20"
                             src="/nyc.jpg"
                         />
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

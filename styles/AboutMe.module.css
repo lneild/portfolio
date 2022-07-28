@@ -75,7 +75,7 @@
 }
 
 .event:hover {
-    border: 7px solid rgb(217, 228, 227);
+    border: 5px solid rgb(217, 228, 227);
     background-color: rgb(24, 86, 106);
     font-size: 3vw;
     color: rgb(217, 228, 227);
@@ -83,8 +83,8 @@
 
 @media only screen and (max-width: 700px) {
     .title {
-        font-size: 11.5vw;
-        letter-spacing: 2.75vw;
+        font-size: 10vw;
+        letter-spacing: 2.2vw;
     }
 
     .timelineWrap {
@@ -102,5 +102,8 @@
         font-size: 2.5vw;
         letter-spacing: 0.5vw;
         font-weight: bold;
+    }
+    .event:hover {
+        border: 0.7vw solid rgb(217, 228, 227);
     }
 }

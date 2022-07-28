@@ -55,16 +55,15 @@
     transform-origin: bottom left;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 650px) {
     .nav {
         justify-content: center;
         height: 12vw;
     }
 
     .content {
-        justify-content: space-around;
         margin: 0px;
-        width: 98%;
+        width: 95%;
         justify-content: space-between;
     }
 

@@ -5,7 +5,7 @@
     position: relative;
     height: 100vh;
     width: 100vw;
-    overflow-y: scroll;
+    overflow-y: hidden;
     background-color: rgb(217, 228, 227, 0.6);
     z-index: 2;
 }
@@ -31,7 +31,7 @@
 }
 
 .content {
-    height: 90vh;
+    height: 80vh;
     overflow: none;
     display: flex;
     align-items: center;
@@ -47,8 +47,8 @@
     justify-content: center;
     border: 7px dotted rgb(24, 86, 106);
     border-radius: 50%;
-    width: 65vh;
-    height: 65vh;
+    width: 50vh;
+    height: 50vh;
 }
 
 .social {
@@ -96,7 +96,7 @@
 }
 
 .social:hover {
-    border: 7px solid rgb(217, 228, 227);
+    border: 5px solid rgb(217, 228, 227);
     background-color: rgb(24, 86, 106);
 }
 
@@ -110,19 +110,18 @@
 @media screen and (max-width: 700px) {
     .title {
         padding-top: 5vw;
-        font-size: 11.5vw;
-        line-height: 16vw;
-        letter-spacing: 2.3vw;
+        font-size: 10vw;
+        letter-spacing: 2.2vw;
         padding-left: 0px;
         padding-right: 0px;
     }
     .content {
-        height: 110vw;
+        height: 70vh;
     }
 
     .socialContainer {
-        width: 65vw;
-        height: 65vw;
+        width: 55vw;
+        height: 55vw;
         border: 0.7vw dotted rgb(24, 86, 106);
     }
 
@@ -130,5 +129,8 @@
         border: 0.7vw solid rgb(24, 86, 106);
         height: 18vw;
         width: 18vw;
+    }
+    .social:hover {
+        border: 0.7vw solid rgb(217, 228, 227);
     }
 }
