@@ -1,0 +1,28 @@
+.rockefeller {
+    background: lightslategray;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.picTextContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.icon {
+    min-width: 45vh;
+    min-height: 45vh;
+}
+
+.text {
+    text-transform: uppercase;
+    color: white;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    font-size: 32px;
+    font-weight: bolder;
+}

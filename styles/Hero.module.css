@@ -1,3 +1,5 @@
+@import "react-typed/dist/animatedCursor.css";
+
 .hero {
     position: relative;
     overflow: hidden;
@@ -14,6 +16,7 @@
 
 .headingText {
     position: absolute;
+    /* border: 1px solid yellow; */
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -37,6 +40,7 @@
     letter-spacing: 20px;
     margin: 20px;
     font-family: "Exo", sans-serif;
+    /* border: 4px solid green; */
 }
 
 @media only screen and (max-width: 600px) {

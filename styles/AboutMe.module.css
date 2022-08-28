@@ -14,7 +14,7 @@
 
 .title {
     font-family: "Exo", sans-serif;
-    height: 10vh;
+    height: fit-content;
     letter-spacing: 10px;
     font-size: 60px;
     padding-top: 25px;
@@ -22,6 +22,7 @@
     width: 100vw;
     text-align: center;
     color: rgb(24, 86, 106);
+    /* border: 2px solid green; */
 }
 
 .content {
@@ -30,13 +31,14 @@
     align-items: center;
     height: 85%;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     position: relative;
+    /* border: 2px solid yellow; */
 }
 
 .timelineWrap {
-    text-align: center;
-    margin: 20px;
+    /* text-align: center; */
+    /* margin: 20px; */
     position: relative;
     width: 100%;
 }
@@ -54,7 +56,7 @@
     left: 0;
     border-top: 7px dotted rgb(24, 86, 106);
     width: 100%;
-    transform: translateY(-50%);
+    transform: translate(0, -50%);
 }
 
 .event {
@@ -82,28 +84,56 @@
 }
 
 @media only screen and (max-width: 700px) {
+    .content {
+        /* border: 1px solid green; */
+    }
+
     .title {
         font-size: 10vw;
         letter-spacing: 2.2vw;
     }
 
+    .timeline {
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-between;
+        /* border: 1px solid white; */
+    }
+
     .timelineWrap {
-        margin: 5px;
+        position: absolute;
+        display: flex;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        margin: 20px;
+        position: relative;
+        height: 100%;
+        justify-content: center;
     }
 
     .timelineWrap:before {
-        border-top: 0.7vw dotted rgb(24, 86, 106);
+        content: "";
+        width: 1px;
+        left: calc(50% - 1px);
+        transform: translateX(-50%);
+        top: 0;
+        margin: 5px;
+        height: 98%;
+        border-right: 0.7vh dotted rgb(24, 86, 106);
+        border-top: none;
     }
 
     .event {
-        border: 0.7vw solid rgb(24, 86, 106);
-        height: 22vw;
-        width: 22vw;
-        font-size: 2.5vw;
-        letter-spacing: 0.5vw;
+        border: 0.7vh solid rgb(24, 86, 106);
+        height: 22vh;
+        width: 22vh;
+        font-size: 2.5vh;
+        letter-spacing: 0.5vh;
         font-weight: bold;
     }
     .event:hover {
-        border: 0.7vw solid rgb(217, 228, 227);
+        border: 0.7vh solid rgb(217, 228, 227);
+        font-size: 3vh;
     }
 }

@@ -97,10 +97,8 @@ export default function TypingText(props) {
         return {
             text: (
                 <span className={`${currentWord.length ? "" : styles.empty}`}>
-                    <span>
-                        {currentWord.length ? currentWord.join("") : "0"}
-                        <div className={styles.cursor}></div>
-                    </span>
+                    {currentWord.length ? currentWord.join("") : "0"}
+                    <div className={styles.cursor}></div>
                 </span>
             ),
             start: () => setIsStopped(false),
