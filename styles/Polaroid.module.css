@@ -1,23 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo:wght@500&family=Josefin+Sans&display=swap");
 
-.polaroid {
-    border: 10px solid white;
-}
-
 .backgroundPic {
     position: relative;
-    width: 35vh;
-    height: 45vh;
+    width: 250px;
+    height: 275px;
     overflow: hidden;
-    border: 5px solid white;
+    border: 8px solid white;
 }
 
 .bottomLabel {
     position: relative;
-    height: 7.5vh;
-    width: 35vh;
+    height: 50px;
     background-color: white;
-    border: 5px solid white;
+    border: 8px solid white;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,28 +22,7 @@
 .date {
     padding: 5px;
     font-family: "Exo", sans-serif;
-    letter-spacing: 3px;
-    font-size: 2vw;
+    letter-spacing: 2px;
+    font-size: 20px;
     color: rgb(24, 86, 106);
-}
-
-@media only screen and (max-width: 650px) {
-    .title,
-    .date {
-        padding: 1vh;
-        padding-top: 2vh;
-        font-size: 3.5vw;
-        letter-spacing: 0.2vw;
-        line-height: 5vw;
-    }
-
-    .backgroundPic {
-        width: 55vw;
-        height: 65vw;
-    }
-
-    .bottomLabel {
-        height: 12vw;
-        width: 55vw;
-    }
 }

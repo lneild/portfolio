@@ -18,10 +18,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 60vw;
-    height: 80vh;
+    width: 800px;
+    height: 600px;
     background-color: rgb(24, 86, 106);
-    border: 8px solid rgb(217, 228, 227);
+    border: 10px solid rgb(217, 228, 227);
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     display: flex;
@@ -34,7 +34,6 @@
 .title,
 .content,
 .button {
-    width: fit-content;
     color: rgb(217, 228, 227);
 }
 
@@ -44,54 +43,48 @@
 
 .title {
     text-transform: uppercase;
-    padding: 1.5vw;
+    margin: 15px;
     font-family: "Exo", sans-serif;
-    font-size: 3.5vw;
-    letter-spacing: 0.2vw;
-    line-height: 5vw;
+    letter-spacing: 3.5px;
+    font-size: 35px;
 }
 
 .content {
+    width: 750px;
+    height: 430px;
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-between;
-    height: 70vh;
-    overflow-y: scroll;
-    font-family: "open", sans-serif;
-    width: 95%;
-    border: 1px solid yellow;
+    border: 1px solid red;
 }
 
 .description {
     font-family: "Open Sans", sans-serif;
-    margin-right: 20px;
-    font-size: 1.3vw;
-    letter-spacing: 0.05vw;
-    line-height: 1.7vw;
-    height: fit-content;
+    width: 430px;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 800px) {
     .card {
         width: 95vw;
         height: 95vh;
     }
 
     .title {
-        font-size: 3.5vh;
-        letter-spacing: 0.2vh;
-        line-height: 5vh;
+        letter-spacing: 2.5px;
+        font-size: 25px;
+        margin-bottom: 5px;
     }
 
     .content {
-        flex-direction: column;
-        align-items: center;
-        min-height: 70vh;
+        overflow-y: scroll;
+        height: 80vh;
+        margin-bottom: 15px;
+        justify-content: center;
     }
     .description {
-        font-size: 3.5vw;
-        letter-spacing: 0.2vw;
-        line-height: 5vw;
-        margin-bottom: 20px;
+        width: 85vw;
+        font-size: 15px;
+        letter-spacing: 1.5px;
+        line-height: 19px;
     }
 }

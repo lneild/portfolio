@@ -22,7 +22,6 @@
     width: 100vw;
     text-align: center;
     color: rgb(24, 86, 106);
-    /* border: 2px solid green; */
 }
 
 .content {
@@ -38,8 +37,6 @@
 }
 
 .timelineWrap {
-    /* text-align: center; */
-    /* margin: 20px; */
     position: relative;
     width: 100%;
 }
@@ -95,7 +92,6 @@
         flex-direction: column;
         height: 100%;
         justify-content: space-between;
-        /* border: 1px solid white; */
     }
 
     .timelineWrap {

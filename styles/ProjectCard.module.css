@@ -12,8 +12,8 @@
 
 .backgroundPic {
     position: relative;
-    width: 28vw;
-    min-height: 30vw;
+    width: 400px;
+    min-height: 420px;
     overflow: hidden;
     border: 10px solid white;
 }
@@ -22,7 +22,7 @@
     position: relative;
     border: 10px solid white;
     border-top: 0;
-    height: 4.5vw;
+    height: 60px;
     background-color: white;
     display: flex;
     flex-direction: row;
@@ -35,37 +35,10 @@
     width: fit-content;
     font-family: "Exo", sans-serif;
     letter-spacing: 3px;
-    font-size: 2vw;
+    font-size: 30px;
     color: rgb(24, 86, 106);
 }
 
 .projectCard:hover {
     transform: scale(1.05);
-}
-
-@media only screen and (max-width: 700px) {
-    .backgroundPic {
-        position: relative;
-        width: 50vw;
-        min-height: 55vw;
-        overflow: hidden;
-        border: 1.8vw solid white;
-    }
-
-    .title,
-    .date {
-        padding: 1vh;
-        padding-top: 2vh;
-        width: fit-content;
-        font-family: "Exo", sans-serif;
-        letter-spacing: 0.5vh;
-        font-size: 3.3vh;
-    }
-
-    .bottomLabel {
-        border: 1.8vh solid white;
-        border-top: 0;
-        height: 9vh;
-        width: 50vw;
-    }
 }
