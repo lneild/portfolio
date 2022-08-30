@@ -4,8 +4,8 @@
 .experience {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
-    max-height: fit-content;
+    /* min-height: 100vh; */
+    height: fit-content;
 }
 
 .pic {
@@ -24,6 +24,7 @@
     overflow: none;
     display: flex;
     flex-direction: column;
+    margin-bottom: 2vh;
 }
 
 .title {
@@ -45,6 +46,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 
 .card {
@@ -53,20 +56,16 @@
     margin: 20px;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 850px) {
     .title {
-        font-size: 10vw;
-        letter-spacing: 2.2vw;
-        margin-bottom: 20px;
+        font-size: 50px;
+        letter-spacing: 8px;
+        margin-bottom: 1vh;
     }
 
     .projects {
         margin: 5px;
-        margin-bottom: 7vh;
-    }
-
-    .content {
-        border: 2px solid purple;
+        margin-bottom: 3vh;
     }
 
     .card {

@@ -6,15 +6,16 @@
 
 .backgroundPic {
     position: relative;
-    min-width: 35vh;
-    min-height: 45vh;
+    width: 35vh;
+    height: 45vh;
     overflow: hidden;
     border: 5px solid white;
 }
 
 .bottomLabel {
     position: relative;
-    height: 40px;
+    height: 7.5vh;
+    width: 35vh;
     background-color: white;
     border: 5px solid white;
     display: flex;
@@ -24,11 +25,30 @@
 
 .title,
 .date {
-    padding: 3px;
-    width: fit-content;
-    margin-top: 5px;
+    padding: 5px;
     font-family: "Exo", sans-serif;
-    letter-spacing: 2px;
-    font-size: 20px;
+    letter-spacing: 3px;
+    font-size: 2vw;
     color: rgb(24, 86, 106);
+}
+
+@media only screen and (max-width: 650px) {
+    .title,
+    .date {
+        padding: 1vh;
+        padding-top: 2vh;
+        font-size: 3.5vw;
+        letter-spacing: 0.2vw;
+        line-height: 5vw;
+    }
+
+    .backgroundPic {
+        width: 55vw;
+        height: 65vw;
+    }
+
+    .bottomLabel {
+        height: 12vw;
+        width: 55vw;
+    }
 }

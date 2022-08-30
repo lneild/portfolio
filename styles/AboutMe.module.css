@@ -32,8 +32,9 @@
     height: 85%;
     text-align: center;
     margin: 10px;
+    margin-bottom: 30px;
     position: relative;
-    /* border: 2px solid yellow; */
+    margin: 2vw;
 }
 
 .timelineWrap {
@@ -68,8 +69,8 @@
     background-color: rgb(217, 228, 227);
     transition: 0.25s ease-out;
     font-family: "Exo", sans-serif;
-    letter-spacing: 3px;
-    font-size: 2.6vw;
+    letter-spacing: 0.1vw;
+    font-size: 2vw;
     color: rgb(24, 86, 106);
     display: flex;
     justify-content: center;
@@ -79,18 +80,15 @@
 .event:hover {
     border: 5px solid rgb(217, 228, 227);
     background-color: rgb(24, 86, 106);
-    font-size: 3vw;
+    font-size: 2.2vw;
+    letter-spacing: 0.12vw;
     color: rgb(217, 228, 227);
 }
 
-@media only screen and (max-width: 700px) {
-    .content {
-        /* border: 1px solid green; */
-    }
-
+@media only screen and (max-width: 800px) {
     .title {
-        font-size: 10vw;
-        letter-spacing: 2.2vw;
+        font-size: 50px;
+        letter-spacing: 8px;
     }
 
     .timeline {

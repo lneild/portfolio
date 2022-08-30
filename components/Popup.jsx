@@ -9,15 +9,15 @@ export default function Popup(props) {
             <div className={styles.card}>
                 <div className={styles.title}>{props.title}</div>
                 <div className={styles.content}>
+                    <div className={styles.description}>
+                        {props.description}
+                    </div>
                     <div className={styles.photo}>
                         <Polaroid
                             title={props.picTitle}
                             date={props.picDate}
                             src={props.src}
                         />
-                    </div>
-                    <div className={styles.description}>
-                        {props.description}
                     </div>
                 </div>
                 <div

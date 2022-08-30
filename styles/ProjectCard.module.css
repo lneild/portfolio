@@ -46,8 +46,8 @@
 @media only screen and (max-width: 700px) {
     .backgroundPic {
         position: relative;
-        width: 50vh;
-        min-height: 55vh;
+        width: 50vw;
+        min-height: 55vw;
         overflow: hidden;
         border: 1.8vw solid white;
     }
@@ -66,6 +66,6 @@
         border: 1.8vh solid white;
         border-top: 0;
         height: 9vh;
-        width: 50vh;
+        width: 50vw;
     }
 }

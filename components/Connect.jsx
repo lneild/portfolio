@@ -6,7 +6,7 @@ import Link from "next/link";
 export default function Connect() {
     return (
         <div id="connect">
-            <div className={styles.pic}>
+            {/* <div className={styles.pic}>
                 <Image
                     src="/ocean.jpg"
                     alt="Ocean"
@@ -14,7 +14,7 @@ export default function Connect() {
                     objectFit="cover"
                     priority
                 />
-            </div>
+            </div> */}
             <div className={styles.connect}>
                 <div className={styles.title}>LETS CONNECT</div>
                 <div className={styles.content}>
