@@ -37,16 +37,8 @@
 
 .title {
     font-size: 70px;
-    letter-spacing: 20px;
+    letter-spacing: 17px;
     margin: 20px;
     font-family: "Exo", sans-serif;
-    /* border: 4px solid green; */
-}
-
-@media only screen and (max-width: 600px) {
-    .title {
-        font-size: 12vw;
-        letter-spacing: 3vw;
-        line-height: 19vw;
-    }
+    width: 90vw;
 }

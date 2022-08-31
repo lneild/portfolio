@@ -22,8 +22,7 @@
     height: fit-content;
     letter-spacing: 10px;
     font-size: 60px;
-    padding-top: 25px;
-    padding-bottom: 5px;
+    padding: 25px;
     width: 100vw;
     text-align: center;
     color: rgb(24, 86, 106);
@@ -32,12 +31,11 @@
 
 .content {
     border: 1px solid yellow;
-    height: 80vh;
-    overflow: none;
+    height: fit-content;
+    padding: 30px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 20px;
     z-index: 2;
 }
 
@@ -123,9 +121,9 @@
         padding-right: 0px;
     }
     .content {
-        height: 60vh;
+        height: fit-content;
+        padding: 10px;
         border: 1px solid red;
-        margin-bottom: 3vh;
     }
 
     .socialContainer {

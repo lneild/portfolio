@@ -50,17 +50,17 @@
 }
 
 .content {
-    width: 750px;
+    width: 700px;
     height: 430px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap-reverse;
     justify-content: space-between;
-    border: 1px solid red;
+    /* border: 1px solid yellow; */
 }
 
 .description {
     font-family: "Open Sans", sans-serif;
-    width: 430px;
+    width: 400px;
 }
 
 @media only screen and (max-width: 800px) {
@@ -77,14 +77,16 @@
 
     .content {
         overflow-y: scroll;
-        height: 80vh;
+        height: 68vh;
+        width: 85vw;
         margin-bottom: 15px;
         justify-content: center;
     }
     .description {
-        width: 85vw;
+        width: 78vw;
         font-size: 15px;
         letter-spacing: 1.5px;
         line-height: 19px;
+        margin-bottom: 25px;
     }
 }
