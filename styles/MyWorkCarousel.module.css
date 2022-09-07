@@ -1,16 +1,13 @@
 .eachSlide {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    /* justify-content: space-between; */
     flex-wrap: wrap;
-    border: 2px solid yellow;
-    margin-bottom: 8vh;
-    /* background: #393939;
-    box-shadow: 5px 5px 10px #212121, -5px -5px 10px #515151;
-    padding-top: 30px;
-    height: fit-content;
-    border-radius: 20px;
-    margin-bottom: 30px; */
+    background-color: rgb(72, 72, 72);
+    width: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 50px;
 }
 
 .content {
@@ -38,7 +35,7 @@
 
 @media screen and (max-width: 800px) {
     .eachSlide {
-        margin-bottom: 8vw;
+        margin-bottom: 45px;
         flex-direction: column;
     }
 }

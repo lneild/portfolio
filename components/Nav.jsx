@@ -13,7 +13,7 @@ export default function Nav() {
         setVisible(prevScrollPos > currentScrollPos || currentScrollPos < 10);
         setPrevScrollPos(currentScrollPos);
 
-        if (currentScrollPos < window.innerHeight) {
+        if (currentScrollPos < 50) {
             setAtTop(true);
         } else {
             setAtTop(false);

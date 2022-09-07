@@ -1,15 +1,16 @@
 .codeSection {
-    height: 100%;
-    width: fit-content;
-    background-color: rgb(3, 194, 159);
-    padding: 5px;
+    height: 26vw;
+    width: 45vw;
+    border: 4px solid rgb(3, 194, 159);
     border-radius: 10px;
+    margin-right: 25px;
 }
 
-/* @media screen and (max-width: 800px) {
+@media screen and (max-width: 750px) {
     .codeSection {
-        width: 54.5vw;
-        height: 35vw;
-        padding: 5px;
+        width: 88vw;
+        height: fit-content;
+        margin-bottom: 20px;
+        margin-right: 0px;
     }
-} */
+}

@@ -82,17 +82,18 @@
 }
 
 .myWork {
-    width: 95vw;
+    width: 100vw;
     margin-top: 40px;
     margin-bottom: 30px;
-    padding: 0;
-    border: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media screen and (max-width: 800px) {
     .logo {
-        min-width: 70vw;
-        min-height: 30vw;
+        min-width: 188px;
+        min-height: 72px;
     }
 
     .background {
@@ -125,7 +126,5 @@
     .myWork {
         margin-top: 20px;
         padding-top: 10px;
-        width: 95vw;
-        padding-bottom: 0px;
     }
 }
