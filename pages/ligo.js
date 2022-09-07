@@ -3,39 +3,39 @@ import Image from "next/image";
 import styles from "../styles/Ligo.module.css";
 import MyWorkCarousel from "../components/MyWorkCarousel";
 
-const logoData = {
-    sql: "/sql-server.png",
-    notion: "/notion.png",
-    ga: "/google-analytics.png",
-};
+// const logoData = {
+//     sql: "/sql-server.png",
+//     notion: "/notion.png",
+//     ga: "/google-analytics.png",
+// };
 
 export default function Ligo() {
-    const [isHovered, setIsHovered] = useState(false);
+    // const [isHovered, setIsHovered] = useState(false);
 
-    const handleHoverOut = () => {
-        console.log("out");
-        setIsHovered(false);
-    };
+    // const handleHoverOut = () => {
+    //     console.log("out");
+    //     setIsHovered(false);
+    // };
 
-    const handleHoverIn = (tool) => {
-        console.log("in");
-        setIsHovered(tool);
-    };
+    // const handleHoverIn = (tool) => {
+    //     console.log("in");
+    //     setIsHovered(tool);
+    // };
 
-    const PictureCode = ({ enabled, logo }) => {
-        return (
-            <div className={`${styles.photo} ${!enabled ? styles.hidden : ""}`}>
-                <Image
-                    src={logo}
-                    alt={logo}
-                    layout="fill"
-                    objectFit="contain"
-                    objectPosition={"right top"}
-                    priority
-                />
-            </div>
-        );
-    };
+    // const PictureCode = ({ enabled, logo }) => {
+    //     return (
+    //         <div className={`${styles.photo} ${!enabled ? styles.hidden : ""}`}>
+    //             <Image
+    //                 src={logo}
+    //                 alt={logo}
+    //                 layout="fill"
+    //                 objectFit="contain"
+    //                 objectPosition={"right top"}
+    //                 priority
+    //             />
+    //         </div>
+    //     );
+    // };
 
     const JobDescription = () => {
         return (
@@ -47,8 +47,8 @@ export default function Ligo() {
                 team and growth team. I primarily coded in
                 <span
                     className={styles.keyTool}
-                    onMouseEnter={() => handleHoverIn("sql")}
-                    onMouseLeave={() => handleHoverOut()}
+                    // onMouseEnter={() => handleHoverIn("sql")}
+                    // onMouseLeave={() => handleHoverOut()}
                 >
                     {" "}
                     SQL{" "}
@@ -57,8 +57,8 @@ export default function Ligo() {
                 their stategy. Most of my tasks were assigned through
                 <span
                     className={styles.keyTool}
-                    onMouseEnter={() => handleHoverIn("notion")}
-                    onMouseLeave={() => handleHoverOut()}
+                    // onMouseEnter={() => handleHoverIn("notion")}
+                    // onMouseLeave={() => handleHoverOut()}
                 >
                     {" "}
                     Notion{" "}
@@ -69,8 +69,8 @@ export default function Ligo() {
                 also utilized
                 <span
                     className={styles.keyTool}
-                    onMouseEnter={() => handleHoverIn("ga")}
-                    onMouseLeave={() => handleHoverOut()}
+                    // onMouseEnter={() => handleHoverIn("ga")}
+                    // onMouseLeave={() => handleHoverOut()}
                 >
                     {" "}
                     Google Anayltics{" "}
@@ -99,7 +99,7 @@ export default function Ligo() {
                 <div className={styles.workTitle}>data science intern</div>
                 <div className={styles.description}>
                     <JobDescription />
-                    <PictureCode
+                    {/* <PictureCode
                         logo={logoData.sql}
                         enabled={isHovered === "sql"}
                     />
@@ -110,7 +110,7 @@ export default function Ligo() {
                     <PictureCode
                         logo={logoData.ga}
                         enabled={isHovered === "ga"}
-                    />
+                    /> */}
                 </div>
                 <div className={styles.workTitle}>my work</div>
             </div>

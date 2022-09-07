@@ -141,23 +141,21 @@ inner join (
 ) as purchased on date_calculated = date_paid`;
 
 const revenueGraphs = [
-    { src: "/daily_rev.jpg", alt: "daily-revenue", num: 2.9 },
-    { src: "/weekly_rev.jpg", alt: "weekly-revenue", num: 2.7 },
-    { src: "/monthly_rev.jpg", alt: "montly-revenue", num: 2.7 },
+    { src: "/daily_rev.jpg", alt: "daily-revenue" },
+    { src: "/weekly_rev.jpg", alt: "weekly-revenue" },
+    { src: "/monthly_rev.jpg", alt: "montly-revenue" },
 ];
-const activeMembersGraph = [
-    { src: "/members.jpg", alt: "active members", num: 1.9 },
-];
-const churnGraph = [{ src: "/monthly_churn.jpg", alt: "churn", num: 1.9 }];
-const calcGraph = [{ src: "/calculations.jpg", alt: "calculations", num: 1.9 }];
+const activeMembersGraph = [{ src: "/members.jpg", alt: "active members" }];
+const churnGraph = [{ src: "/monthly_churn.jpg", alt: "churn" }];
+const calcGraph = [{ src: "/calculations.jpg", alt: "calculations" }];
 
 const slideData = [
-    {
-        graphs: revenueGraphs,
-        code: revenueCode,
-        description:
-            "In this query, we look at all the finalized payments between a certain date range. It also allows the viewer to group all payments so it can see revenue daily, weekly, or monthly. ",
-    },
+    // {
+    //     graphs: revenueGraphs,
+    //     code: revenueCode,
+    //     description:
+    //         "In this query, we look at all the finalized payments between a certain date range. It also allows the viewer to group all payments so it can see revenue daily, weekly, or monthly. ",
+    // },
     {
         graphs: activeMembersGraph,
         code: activeMembersCode,
@@ -179,48 +177,54 @@ const slideData = [
 ];
 
 export default function MyWorkCarousel() {
-    const [isFlip, setIsFlip] = useState(false);
+    // const [isFlip, setIsFlip] = useState(false);
 
-    const handleClick = () => {
-        console.log(!isFlip);
-        setIsFlip(!isFlip);
-    };
+    // const handleClick = () => {
+    //     console.log(!isFlip);
+    //     setIsFlip(!isFlip);
+    // };
 
     const allSlides = [];
 
     slideData.forEach((slide) => {
         allSlides.push(
             <div className={styles.eachSlide}>
-                <ReactCardFlip
+                <div className={styles.content}>
+                    {/* <ReactCardFlip
                     isFlipped={isFlip}
                     flipSpeedBackToFront={0.35}
                     flipSpeedFrontToBack={0.35}
-                >
-                    <div onClick={() => handleClick()}>
+                > */}
+                    <div className={styles.description}>
+                        <Blob description={slide.description} />
+                    </div>
+                    <div className={styles.graphs}>
                         <ChartDisplay
                             num={slide.numGraphs}
                             data={slide.graphs}
                         />
                     </div>
-                    <div onClick={() => handleClick()}>
-                        <CodeCard code={slide.code} />
-                    </div>
-                </ReactCardFlip>
-                <div className={styles.blobDiv}>
-                    <Blob description={slide.description} />
                 </div>
+                <div className={styles.code}>
+                    <CodeCard code={slide.code} />
+                </div>
+
+                {/* </ReactCardFlip> */}
             </div>
         );
     });
     return (
-        <div className={styles.carousel}>
-            <Carousel
-                showThumbs={false}
-                infiniteLoop={true}
-                transitionTime={1000}
-            >
-                {allSlides}
-            </Carousel>
-        </div>
+        // <div className={styles.carousel}>
+        /* <div className={styles.nonMobile}>
+                <Carousel
+                    showThumbs={false}
+                    infiniteLoop={true}
+                    transitionTime={1000}
+                >
+                    {allSlides}
+                </Carousel>
+            </div> */
+        <div>{allSlides}</div>
+        // </div>
     );
 }

@@ -30,7 +30,7 @@ export default function Nav() {
             className={styles.nav}
             style={{
                 top: visible ? "0" : "-70px",
-                backgroundColor: atTop ? "" : "rgb(24, 86, 106)",
+                backgroundColor: atTop ? "" : "rgb(33, 43, 65)",
                 transition: ".5s ease-out",
             }}
         >

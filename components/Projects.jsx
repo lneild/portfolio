@@ -9,7 +9,7 @@ export default function Projects() {
         <div id="projects" className={styles.experience}>
             <div className={styles.pic}>
                 <Image
-                    src="/water.jpg"
+                    src="/txture.jpg"
                     alt="Water"
                     layout="fill"
                     objectFit="cover"
@@ -18,7 +18,7 @@ export default function Projects() {
             </div>
 
             <div className={styles.content}>
-                <div className={styles.title}>PROJECTS</div>
+                <div className={styles.title}>EXPERIENCE</div>
 
                 <div className={styles.projects}>
                     <Link href="/ligo">

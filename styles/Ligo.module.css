@@ -82,14 +82,11 @@
 }
 
 .myWork {
-    background: #393939;
-    box-shadow: 5px 5px 10px #212121, -5px -5px 10px #515151;
-    padding-top: 30px;
-    height: fit-content;
     width: 95vw;
     margin-top: 40px;
     margin-bottom: 30px;
-    border-radius: 20px;
+    padding: 0;
+    border: 0;
 }
 
 @media screen and (max-width: 800px) {

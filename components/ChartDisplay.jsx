@@ -7,10 +7,7 @@ export default function ChartDisplay(props) {
 
     props.data.forEach((pic) => {
         charts.push(
-            <div
-                className={styles.graph}
-                style={{ height: 60.0 / pic.num + "vw" }}
-            >
+            <div className={styles.graph}>
                 <Image
                     src={pic.src}
                     alt={pic.alt}

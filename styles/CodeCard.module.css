@@ -1,17 +1,15 @@
 .codeSection {
-    height: 68vh;
-    overflow: scroll;
+    height: 100%;
+    width: fit-content;
     background-color: rgb(3, 194, 159);
-    padding: 10px;
-    width: 54.5vw;
+    padding: 5px;
     border-radius: 10px;
-    cursor: pointer;
 }
 
-@media screen and (max-width: 800px) {
+/* @media screen and (max-width: 800px) {
     .codeSection {
         width: 54.5vw;
         height: 35vw;
         padding: 5px;
     }
-}
+} */

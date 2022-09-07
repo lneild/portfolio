@@ -3,7 +3,7 @@
 .backgroundPic {
     position: relative;
     width: 250px;
-    height: 275px;
+    height: 325px;
     overflow: hidden;
     border: 8px solid white;
 }
@@ -24,5 +24,5 @@
     font-family: "Exo", sans-serif;
     letter-spacing: 2px;
     font-size: 20px;
-    color: rgb(24, 86, 106);
+    color: rgb(33, 43, 65);
 }

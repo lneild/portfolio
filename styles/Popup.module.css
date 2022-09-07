@@ -20,8 +20,8 @@
     transform: translate(-50%, -50%);
     width: 800px;
     height: 600px;
-    background-color: rgb(24, 86, 106);
-    border: 10px solid rgb(217, 228, 227);
+    background-color: rgb(33, 43, 65);
+    border: 5px solid white;
     border-top-right-radius: 100px;
     border-bottom-left-radius: 100px;
     display: flex;
@@ -34,7 +34,7 @@
 .title,
 .content,
 .button {
-    color: rgb(217, 228, 227);
+    color: white;
 }
 
 .button {
@@ -45,8 +45,8 @@
     text-transform: uppercase;
     margin: 15px;
     font-family: "Exo", sans-serif;
-    letter-spacing: 3.5px;
-    font-size: 35px;
+    letter-spacing: 4.5px;
+    font-size: 45px;
 }
 
 .content {
@@ -55,11 +55,14 @@
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
-    /* border: 1px solid yellow; */
 }
 
 .description {
     font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 1.6px;
+    line-height: 24px;
+    color: white;
     width: 400px;
 }
 
@@ -84,9 +87,9 @@
     }
     .description {
         width: 78vw;
-        font-size: 15px;
-        letter-spacing: 1.5px;
-        line-height: 19px;
+        font-size: 32px;
+        letter-spacing: 3px;
+        line-height: 45px;
         margin-bottom: 25px;
     }
 }
