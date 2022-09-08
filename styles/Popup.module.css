@@ -66,30 +66,31 @@
     width: 400px;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 815px) {
     .card {
         width: 95vw;
-        height: 95vh;
+        height: 90vh;
     }
 
     .title {
-        letter-spacing: 2.5px;
-        font-size: 25px;
-        margin-bottom: 5px;
+        letter-spacing: 0.7vw;
+        font-size: 7vw;
+        margin-top: 25px;
+        margin-bottom: 0;
     }
 
     .content {
         overflow-y: scroll;
-        height: 68vh;
+        height: 65vh;
         width: 85vw;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
         justify-content: center;
     }
     .description {
         width: 78vw;
-        font-size: 32px;
-        letter-spacing: 3px;
-        line-height: 45px;
-        margin-bottom: 25px;
+        letter-spacing: 2px;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 70px;
     }
 }
