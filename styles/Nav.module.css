@@ -57,12 +57,17 @@
 @media only screen and (max-width: 500px) {
     .nav {
         justify-content: center;
-        height: 40px;
+        height: 30px;
     }
 
     .content {
         margin: 0px;
         width: 100vw;
         justify-content: space-evenly;
+    }
+
+    .section {
+        font-size: 3.3vw;
+        letter-spacing: 0.33vw;
     }
 }

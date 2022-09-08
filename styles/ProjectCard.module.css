@@ -42,3 +42,23 @@
 .projectCard:hover {
     transform: scale(1.05);
 }
+
+@media screen and (max-width: 500px) {
+    .backgroundPic {
+        width: 250px;
+        min-height: 260px;
+        border: 5px solid white;
+    }
+
+    .bottomLabel {
+        height: 50px;
+    }
+
+    .title,
+    .date {
+        padding: 3px;
+        letter-spacing: 2px;
+        font-size: 5vw;
+        color: rgb(33, 43, 65);
+    }
+}

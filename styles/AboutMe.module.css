@@ -32,7 +32,6 @@
     margin: 10px;
     margin-bottom: 30px;
     position: relative;
-    margin: 2vw;
 }
 
 .timelineWrap {
@@ -81,8 +80,9 @@
 
 @media only screen and (max-width: 850px) {
     .title {
-        font-size: 50px;
-        letter-spacing: 8px;
+        font-size: 10vw;
+        letter-spacing: 1.5vw;
+        margin-bottom: 1vh;
     }
 
     .timeline {
@@ -92,39 +92,32 @@
     }
 
     .timelineWrap {
-        position: absolute;
         display: flex;
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
-        margin: 20px;
-        position: relative;
         height: 100%;
         justify-content: center;
+        margin-bottom: 40px;
     }
 
     .timelineWrap:before {
         content: "";
         width: 1px;
-        left: calc(50% - 1px);
+        left: calc(50% - 0.5px);
         transform: translateX(-50%);
         top: 0;
-        margin: 5px;
         height: 98%;
-        border-right: 4px dotted rgb(24, 86, 106);
+        border-right: 4px dotted white;
         border-top: none;
     }
 
     .event {
-        border: 0.7vh solid rgb(24, 86, 106);
+        border: 0.7vh solid white;
         height: 22vh;
         width: 22vh;
         font-size: 2.5vh;
         letter-spacing: 0.5vh;
         font-weight: bold;
-    }
-    .event:hover {
-        border: 0.7vh solid rgb(217, 228, 227);
-        font-size: 3vh;
     }
 }
