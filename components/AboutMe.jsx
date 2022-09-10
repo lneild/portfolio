@@ -1,24 +1,47 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import styles from "../styles/AboutMe.module.css";
+// import popupStyles from "../styles/Popup.module.css";
 import Popup from "./Popup";
+import Link from "next/link";
 import Image from "next/image";
-import { remove } from "dom/lib/mutation";
 
 const popupData = {
     past: {
-        description: `Unlike many girls who grow up hearing fairy tales about princesses and mermaids, ever since I was born I have heard stories about my great-grandfather Dr. William Hanford and his inventions. My great-grandpa was granted more than 120 patents, including his best-known invention of polyurethane. This family legacy has driven my creative and entrepreneurial drive. The fact that my great-grandfather was referred to by the New York Times as “the chemist who changed the world” reminds me every day of what we all are capable of accomplishing. Indeed, the driving force behind my passion for STEM has been the curiosity to understand and innovate, encoded in my DNA.`,
+        description: (
+            <>
+                Unlike many girls who grew up hearing fairy tales about
+                princesses and mermaids, I was raised hearing stories about my
+                great-grandfather,{" "}
+                <Link href="https://en.wikipedia.org/wiki/William_Edward_Hanford">
+                    <a className={styles.linkStyle}>Dr. William Hanford</a>
+                </Link>
+                , and his many inventions. Dr. Hanford received over 120
+                patents, including for his best-known creation, polyurethane.
+                Thes New York Times called him{" "}
+                <Link href="nytimes.com/1996/01/31/us/w-e-hanford-87-chemist-who-changed-world.html">
+                    <a className={styles.linkStyle}>
+                        “The chemist who changed the world.”
+                    </a>
+                </Link>
+                This family legacy has fueled my creative and entrepreneurial
+                drive, reminding me every day that we are all capable of
+                contributing important new discoveries to society. The driving
+                force behind my passion for STEM has been the curiosity to
+                understand and innovate, encoded in my DNA.
+            </>
+        ),
         picTitle: "Family",
         picDate: "'08",
         src: "/family.jpg",
     },
     present: {
-        description: `I am currently pursuing a double major in computer science and data science at Northwestern University. In my coursework, I am focused on data structures, information processing, and programming. Outside of the classroom, I approach life more holistically. I enjoy running, hiking, meditating, and most importantly, being a part of diverse communities. I am a co-captain for Northwestern’s club squash team and also serve as the social chair of my sorority Tri Delta. I thrive in innovative and intellectual environments and appreciate being surrounded by people who challenge and inspire me. `,
+        description: `I am pursuing a double major in computer science and data science at Northwestern University. My coursework focuses on data structures, information processing, and programming. Outside the classroom, I enjoy running, hiking, squash, and meditating. I am a co-captain for Northwestern’s club squash team and social chair of my sorority Tri Delta. I am constantly seeking new challenges and surrounding myself with people who help to elevate and inspire me. `,
         picTitle: "College Day 1",
         picDate: "'21",
         src: "/college.jpg",
     },
     future: {
-        description: `When I think of my career, I place more emphasis on the work environment, envisioning myself in a collaborative and innovative ecosystem where I am working on something exciting, cutting-edge, and revolutionary. I want to work with compelling people who are passionate and hardworking. Ultimately, when I envision my future, I see myself as engrossed in my work, engaged in my community, and living a purposeful life. Most importantly, I want to feel professionally fulfilled by working on projects I find meaningful and impactful. `,
+        description: `I aspire to be part of an innovative and collaborative company, working on exciting, cutting-edge projects. I hope to work with compelling, ambitious teammates who are passionate about our shared mission. When I envision the future, I see myself as engrossed in my work, positively engaged with my community, and living a purposeful life.`,
         picTitle: "Career",
         picDate: "",
         src: "/headshot.jpg",
@@ -45,15 +68,6 @@ export default function AboutMe(props) {
     //     window.addEventListener("scroll", handleScroll);
     //     return () => window, removeEventListener("scroll", handleScroll);
     // }, [handleScroll]);
-
-    useEffect(() => {
-        if (isOpen) {
-            document.body.style.overflow = "hidden";
-        } else {
-            document.body.style.overflow = "unset";
-        }
-    }, [isOpen]);
-
     return (
         <div id="aboutMe" className={styles.aboutMe}>
             <div className={styles.title}>ABOUT ME</div>

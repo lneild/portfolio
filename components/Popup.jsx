@@ -1,11 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import styles from "../styles/Popup.module.css";
 import Button from "./Button";
 import Polaroid from "./Polaroid";
 
+import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
+
 export default function Popup(props) {
+    const popupRef = useRef(null);
+    useEffect(() => {
+        const ref = popupRef.current;
+        disableBodyScroll(ref);
+        return () => clearAllBodyScrollLocks();
+    });
     return (
-        <div className={styles.viewWindow}>
+        <div className={styles.viewWindow} ref={popupRef}>
             <div className={styles.card}>
                 <div className={styles.title}>{props.title}</div>
                 <div className={styles.content}>
