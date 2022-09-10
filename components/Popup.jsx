@@ -9,7 +9,7 @@ export default function Popup(props) {
     const popupRef = useRef(null);
     useEffect(() => {
         const ref = popupRef.current;
-        disableBodyScroll(ref);
+        disableBodyScroll(ref, { allowTouchMove: ref });
         return () => clearAllBodyScrollLocks();
     });
     return (
