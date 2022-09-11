@@ -70,8 +70,8 @@
 
 @media only screen and (max-width: 815px) {
     .card {
-        width: 80vw;
-        height: 80vh;
+        width: 280px;
+        height: 625px;
     }
 
     .title {
@@ -82,9 +82,11 @@
     }
 
     .popUpScrollContainer {
+        padding-left: 30px;
+        padding-right: 30px;
         overflow-y: scroll;
-        height: 60vh;
-        width: 63vw;
+        height: 475px;
+        width: 265px;
         margin-bottom: 20px;
     }
     .content {
@@ -93,7 +95,7 @@
         margin-bottom: 0px;
     }
     .description {
-        width: 70vw;
+        width: 210px;
         letter-spacing: 1.5px;
         font-size: 15px;
         line-height: 20px;

@@ -3,8 +3,8 @@
 
 .aboutMe {
     position: relative;
-    height: 100vh;
     width: 100vw;
+    height: 100vh;
     overflow: hidden;
     background-color: rgba(33, 43, 65, 0.7);
     z-index: 1;
@@ -57,15 +57,15 @@
 
 .event {
     cursor: pointer;
-    height: 20vw;
-    width: 20vw;
+    height: 300px;
+    width: 300px;
     border-radius: 50%;
     border: 5px solid rgb(165, 168, 172);
     background-color: rgb(33, 43, 65);
     transition: 0.25s ease-out;
     font-family: "Exo", sans-serif;
-    letter-spacing: 0.1vw;
-    font-size: 2vw;
+    letter-spacing: 3px;
+    font-size: 30px;
     color: white;
     display: flex;
     justify-content: center;
@@ -74,8 +74,6 @@
 
 .event:hover {
     border: 5px solid white;
-    font-size: 2.1vw;
-    letter-spacing: 0.11vw;
 }
 
 .linkStyle {
@@ -84,10 +82,18 @@
 }
 
 @media only screen and (max-width: 850px) {
+    .aboutMe {
+        height: 1000px;
+        padding-bottom: 30px;
+    }
     .title {
         font-size: 10vw;
         letter-spacing: 1.5vw;
-        margin-bottom: 1vh;
+        margin-bottom: 30px;
+    }
+
+    .content {
+        height: 900px;
     }
 
     .timeline {
@@ -118,11 +124,11 @@
     }
 
     .event {
-        border: 0.7vh solid white;
-        height: 22vh;
-        width: 22vh;
-        font-size: 2.5vh;
-        letter-spacing: 0.5vh;
+        border: 3px solid white;
+        height: 200px;
+        width: 200px;
+        font-size: 25px;
+        letter-spacing: 2.5px;
         font-weight: bold;
     }
 }

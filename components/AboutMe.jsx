@@ -5,6 +5,7 @@ import Popup from "./Popup";
 import Link from "next/link";
 import Image from "next/image";
 import { useNavContext } from "./providers/NavContextProvider";
+// import { useWindowHeight } from "../hooks/useWindowHeight";
 
 const popupData = {
     past: {
@@ -72,6 +73,8 @@ export default function AboutMe(props) {
     //     window.addEventListener("scroll", handleScroll);
     //     return () => window, removeEventListener("scroll", handleScroll);
     // }, [handleScroll]);
+
+    // const windowHeight = useWindowHeight();
     return (
         <div id="aboutMe" className={styles.aboutMe}>
             <div className={styles.title}>ABOUT ME</div>

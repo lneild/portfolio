@@ -44,7 +44,7 @@ export default function Ligo() {
                 dashboard that helps to create, operate and oversee businesses
                 in the EU. While working there, I analyzed profitability data,
                 user demographic data, and 
-                <span className={styles.keyTool}>SEO </span> data, serving as a
+                <span className={styles.keyTool}>SEO</span> data, serving as a
                 link between the software development and marketing teams. I
                 developed 
                 <span className={styles.keyTool}>PostresSQL</span> queries in a
@@ -56,14 +56,14 @@ export default function Ligo() {
                 public company dashboards, allowing all team members to access
                 this analysis. These findings helped inform Ligo&apos;s KPIs and
                 underpinned the company&apos;s ambitious quarterly planning
-                process. I also leveraged 
-                <span className={styles.keyTool}>Google Analytics</span>
+                process. I also leveraged
+                <span className={styles.keyTool}> Google Analytics</span>
                  and <span className={styles.keyTool}>Amplitude</span> to
                 correlate new features, blog posts, and macrotrends to page
-                traffic to diagnose and explain variability in customer revenue.
-                I am very grateful for the opportunity to contribute to Ligo, as
-                it sharpened my data science skills and confirmed my desire to
-                pursue this field professionally. 
+                traffic in order to diagnose and explain variability in customer
+                revenue. I am very grateful for the opportunity to contribute to
+                Ligo, as it sharpened my data science skills and confirmed my
+                desire to pursue this field professionally. 
             </p>
         );
     };
