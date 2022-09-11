@@ -22,6 +22,7 @@ export default function Popup(props) {
         enable();
         return disable;
     });
+
     return (
         <div className={styles.viewWindow}>
             <div className={styles.card}>

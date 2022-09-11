@@ -1,9 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useContext } from "react";
+import NavContext from "./Nav";
 import styles from "../styles/AboutMe.module.css";
-// import popupStyles from "../styles/Popup.module.css";
 import Popup from "./Popup";
 import Link from "next/link";
 import Image from "next/image";
+import { useNavContext } from "./providers/NavContextProvider";
 
 const popupData = {
     past: {
@@ -13,16 +14,16 @@ const popupData = {
                 princesses and mermaids, I was raised hearing stories about my
                 great-grandfather,{" "}
                 <Link href="https://en.wikipedia.org/wiki/William_Edward_Hanford">
-                    <a className={styles.linkStyle}>Dr. William Hanford</a>
-                </Link>
-                , and his many inventions. Dr. Hanford received over 120
-                patents, including for his best-known creation, polyurethane.
-                Thes New York Times called him{" "}
+                    <a className={styles.linkStyle}>Dr. William Hanford,</a>
+                </Link>{" "}
+                and his many inventions. Dr. Hanford received over 120 patents,
+                including for his best-known creation, polyurethane. Thes New
+                York Times called him{" "}
                 <Link href="nytimes.com/1996/01/31/us/w-e-hanford-87-chemist-who-changed-world.html">
                     <a className={styles.linkStyle}>
                         “The chemist who changed the world.”
                     </a>
-                </Link>
+                </Link>{" "}
                 This family legacy has fueled my creative and entrepreneurial
                 drive, reminding me every day that we are all capable of
                 contributing important new discoveries to society. The driving
@@ -49,14 +50,17 @@ const popupData = {
 };
 
 export default function AboutMe(props) {
+    const { navEnabled, setNavEnabled } = useNavContext();
     const [isOpen, setIsOpen] = useState(false);
 
     const handleClose = () => {
         setIsOpen(false);
+        setNavEnabled(true);
     };
 
     const handleOpen = (time) => {
         setIsOpen(time);
+        setNavEnabled(false);
     };
 
     // const handleScroll = () => {

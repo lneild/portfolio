@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Image from "next/image";
-import Nav from "../components/Nav";
 import styles from "../styles/Ligo.module.css";
 import MyWorkCarousel from "../components/MyWorkCarousel";
 

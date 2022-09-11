@@ -63,43 +63,40 @@
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     line-height: 25px;
-    /* color: rgb(204, 205, 207); */
-    color: white;
+    color: rgb(204, 205, 207);
+    /* color: white; */
     width: 400px;
-}
-
-.linkStyle {
-    color: white;
-    font-weight: bolder;
 }
 
 @media only screen and (max-width: 815px) {
     .card {
-        width: 95vw;
-        height: 90vh;
+        width: 80vw;
+        height: 80vh;
     }
 
     .title {
         letter-spacing: 0.7vw;
         font-size: 7vw;
         margin-top: 25px;
-        margin-bottom: 0;
+        margin-bottom: 10px;
     }
 
     .popUpScrollContainer {
         overflow-y: scroll;
-        height: 65vh;
-        width: 85vw;
+        height: 60vh;
+        width: 63vw;
+        margin-bottom: 20px;
     }
     .content {
         margin-bottom: 25px;
         justify-content: center;
+        margin-bottom: 0px;
     }
     .description {
-        width: 78vw;
-        letter-spacing: 2px;
-        font-size: 20px;
-        line-height: 28px;
-        margin-bottom: 70px;
+        width: 70vw;
+        letter-spacing: 1.5px;
+        font-size: 15px;
+        line-height: 20px;
+        margin-bottom: 30px;
     }
 }
