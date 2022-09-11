@@ -16,8 +16,10 @@ export default function Hero(props) {
 
     const windowHeight = useWindowHeight();
     return (
-        <div id="hero" className={styles.hero} style={{ height: windowHeight }}>
-            <div className={styles.pic} style={{ height: windowHeight }}>
+        <div id="hero" className={styles.hero}>
+            <div className={styles.pic}>
+                {/* <div id="hero" className={styles.hero} style={{ height: windowHeight }}>
+            <div className={styles.pic} style={{ height: windowHeight }}> */}
                 <Image
                     src="/header.jpeg"
                     alt="landscape"
