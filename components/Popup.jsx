@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import styles from "../styles/Popup.module.css";
 import Button from "./Button";
 import Polaroid from "./Polaroid";
@@ -26,16 +26,18 @@ export default function Popup(props) {
         <div className={styles.viewWindow}>
             <div className={styles.card}>
                 <div className={styles.title}>{props.title}</div>
-                <div className={styles.content}>
-                    <div className={styles.photo}>
-                        <Polaroid
-                            title={props.picTitle}
-                            date={props.picDate}
-                            src={props.src}
-                        />
-                    </div>
-                    <div className={styles.description}>
-                        {props.description}
+                <div className={styles.popUpScrollContainer}>
+                    <div className={styles.content}>
+                        <div className={styles.photo}>
+                            <Polaroid
+                                title={props.picTitle}
+                                date={props.picDate}
+                                src={props.src}
+                            />
+                        </div>
+                        <div className={styles.description}>
+                            {props.description}
+                        </div>
                     </div>
                 </div>
                 <div

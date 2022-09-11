@@ -32,7 +32,7 @@
 }
 
 .title,
-.content,
+.popUpScrollContainer,
 .button {
     color: white;
 }
@@ -49,9 +49,11 @@
     font-size: 45px;
 }
 
-.content {
+.popUpScrollContainer {
     width: 700px;
     height: 430px;
+}
+.content {
     display: flex;
     flex-wrap: wrap-reverse;
     justify-content: space-between;
@@ -84,10 +86,12 @@
         margin-bottom: 0;
     }
 
-    .content {
+    .popUpScrollContainer {
         overflow-y: scroll;
         height: 65vh;
         width: 85vw;
+    }
+    .content {
         margin-bottom: 25px;
         justify-content: center;
     }
