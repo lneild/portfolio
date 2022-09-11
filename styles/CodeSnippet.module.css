@@ -11,9 +11,10 @@
 .container pre {
     margin: 0em !important;
     margin-right: 20px;
-    font-size: 0.62vw;
+    font-size: 0.64vw;
     height: 26vw;
     overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 @media screen and (max-width: 750px) {
@@ -23,6 +24,5 @@
     .container pre {
         width: 88vw;
         height: fit-content;
-        font-size: 1vh;
     }
 }
