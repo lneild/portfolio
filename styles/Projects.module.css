@@ -65,10 +65,12 @@
 
     .projects {
         margin: 5px;
-        margin-bottom: 3vh;
+        /* margin-bottom: 3vh; */
+        /* gap: 3vh; */
     }
 
     .card {
         margin: 10px;
+        margin-bottom: 85px;
     }
 }

@@ -1,15 +1,18 @@
 .graph {
-    border: 4px solid rgb(3, 194, 159);
+    /* border: 4px solid rgb(3, 194, 159); */
+    border: 4px solid rgb(165, 168, 172);
+    /* border: white; */
     overflow: hidden;
     border-radius: 10px;
-    width: 44vw;
+    width: 45vw;
     height: 26vw;
     position: relative;
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 800px) {
     .graph {
         width: 88vw;
         height: 53vw;
+        border: 2px solid rgb(165, 168, 172);
     }
 }

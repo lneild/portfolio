@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
 
 .ligo {
-    background-color: #363636;
+    /* background-color: #363636; */
+    background-color: rgb(33, 43, 65);
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -21,6 +22,7 @@
     min-width: 375px;
     min-height: 143px;
     position: relative;
+    margin-top: 35px;
 }
 
 .background {
@@ -35,38 +37,42 @@
 
 .workTitle,
 .description {
-    color: white;
-    font-family: "Montserrat", sans-serif;
     margin-left: 25px;
     margin-right: 25px;
 }
 
 .workTitle {
-    margin-top: 20px;
-    text-transform: uppercase;
-    font-size: 5.7vh;
-    letter-spacing: 0.8vh;
-    border-bottom: 0.8vh solid rgb(3, 194, 159);
+    font-family: "Exo", sans-serif;
+    margin-top: 30px;
     width: fit-content;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 3px;
+    /* border-bottom: 5px solid rgb(3, 194, 159); */
+    color: white;
+    border-bottom: 5px solid white;
 }
 
 .description {
-    font-size: 3.5vh;
-    letter-spacing: 0.2vh;
-    line-height: 5vh;
+    font-family: "Open Sans", sans-serif;
+    color: rgb(204, 205, 207);
+    /* color: white; */
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
 }
 
 .keyTool {
-    color: rgb(3, 194, 159);
-    font-size: 3.7vh;
-    cursor: default;
+    /* color: rgb(3, 194, 159); */
+    /* text-decoration: wavy; */
+    color: white;
 }
 
-.keyTool:hover {
+/* .keyTool:hover {
     z-index: 3;
-}
+} */
 
-.photo {
+/* .photo {
     position: absolute;
     top: 40px;
     right: 30px;
@@ -75,7 +81,7 @@
     z-index: 2;
     opacity: 0.25;
     transition: opacity 150ms ease-out;
-}
+} */
 
 .hidden {
     opacity: 0;
@@ -83,8 +89,7 @@
 
 .myWork {
     width: 100vw;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -102,29 +107,23 @@
 
     .workTitle,
     .description {
-        margin-left: 10px;
-        margin-right: 10px;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
     .workTitle {
-        font-size: 5.7vw;
-        letter-spacing: 0.8vw;
-        margin-top: 10px;
-        border-bottom: 0.8vw solid rgb(3, 194, 159);
+        font-size: 20px;
+        letter-spacing: 2px;
+        /* border-bottom: 3px solid rgb(3, 194, 159); */
+        border-bottom: 3px solid white;
     }
 
     .description {
-        font-size: 3.5vw;
-        letter-spacing: 0.2vw;
-        line-height: 5vw;
-    }
-
-    .keyTool {
-        font-size: 3.7vw;
+        font-size: 14px;
+        line-height: 19px;
     }
 
     .myWork {
-        margin-top: 20px;
-        padding-top: 10px;
+        margin-top: 30px;
     }
 }

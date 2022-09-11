@@ -3,10 +3,12 @@
     flex-direction: row;
     /* justify-content: space-between; */
     flex-wrap: wrap;
-    background-color: rgb(72, 72, 72);
+    /* background-color: rgb(72, 72, 72); */
+    background-color: rgb(53, 62, 82);
     width: fit-content;
     border-radius: 15px;
-    padding: 20px;
+    padding: 1.8vw;
+    margin: 10px;
     margin-bottom: 50px;
 }
 
@@ -37,6 +39,7 @@
     .eachSlide {
         margin-bottom: 45px;
         flex-direction: column;
+        padding: 1.8vh;
     }
 }
 

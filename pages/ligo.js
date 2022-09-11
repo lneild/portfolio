@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "next/image";
+import Nav from "../components/Nav";
 import styles from "../styles/Ligo.module.css";
 import MyWorkCarousel from "../components/MyWorkCarousel";
 
@@ -40,54 +41,42 @@ export default function Ligo() {
     const JobDescription = () => {
         return (
             <p>
-                Ligo is a legal platform to start, run and protect businesses by
-                allowing them to easily create, sign, notarize, and manage legal
-                paperwork located in Amsterdam, NL. While I worked there, In
-                general, I analyzed data and served as link between development
-                team and growth team. I primarily coded in
-                <span
-                    className={styles.keyTool}
-                    // onMouseEnter={() => handleHoverIn("sql")}
-                    // onMouseLeave={() => handleHoverOut()}
-                >
-                    {" "}
-                    SQL{" "}
-                </span>
-                to display data in an effort to help the marketing team create
-                their stategy. Most of my tasks were assigned through
-                <span
-                    className={styles.keyTool}
-                    // onMouseEnter={() => handleHoverIn("notion")}
-                    // onMouseLeave={() => handleHoverOut()}
-                >
-                    {" "}
-                    Notion{" "}
-                </span>
-                and I coded in a Redashdomain called Stats. This tool allowed me
-                to easily publish all visals to public dashboards, visible to
-                all members at the company. In adding to coding SQL queries, I
-                also utilized
-                <span
-                    className={styles.keyTool}
-                    // onMouseEnter={() => handleHoverIn("ga")}
-                    // onMouseLeave={() => handleHoverOut()}
-                >
-                    {" "}
-                    Google Anayltics{" "}
-                </span>
-                to anaylze page traffic and diagnose the root of troughs in
-                revenue so that the growth team could try and course correct the
-                company.
+                Ligo is a LegalTech software platform providing an integrated
+                dashboard that helps to create, operate and oversee businesses
+                in the EU. While working there, I analyzed profitability data,
+                user demographic data, and 
+                <span className={styles.keyTool}>SEO </span> data, serving as a
+                link between the software development and marketing teams. I
+                developed 
+                <span className={styles.keyTool}>PostresSQL</span> queries in a
+                Redashdomain called 
+                <span className={styles.keyTool}>Stats</span> to reveal insights
+                about profitability metrics and client software utilization. 
+                <span className={styles.keyTool}>Stats</span>
+                 allowed me to publish these queries and corresponding graphs to
+                public company dashboards, allowing all team members to access
+                this analysis. These findings helped inform Ligo&apos;s KPIs and
+                underpinned the company&apos;s ambitious quarterly planning
+                process. I also leveraged 
+                <span className={styles.keyTool}>Google Analytics</span>
+                 and <span className={styles.keyTool}>Amplitude</span> to
+                correlate new features, blog posts, and macrotrends to page
+                traffic to diagnose and explain variability in customer revenue.
+                I am very grateful for the opportunity to contribute to Ligo, as
+                it sharpened my data science skills and confirmed my desire to
+                pursue this field professionally. 
             </p>
         );
     };
 
     return (
         <div id="ligo" className={styles.ligo}>
+            {/* <Nav /> */}
+            {/* <HashLink to="/index#projects">X</HashLink> */}
             <div id="header" className={styles.header}>
                 <div className={styles.logo}>
                     <Image
-                        src="/Ligo_logo.png"
+                        src="/ligo_white.png"
                         alt="ligo heading"
                         layout="fill"
                         objectFit="cover"
