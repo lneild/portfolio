@@ -45,7 +45,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2vw;
+    gap: 125px;
     margin: 0;
     padding: 0;
 }
@@ -65,12 +65,11 @@
 
     .projects {
         margin: 5px;
-        /* margin-bottom: 3vh; */
-        /* gap: 3vh; */
+        gap: 0px;
     }
 
     .card {
         margin: 10px;
-        margin-bottom: 85px;
+        margin-bottom: 60px;
     }
 }
