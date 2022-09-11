@@ -14,7 +14,7 @@
 }
 
 .content {
-    width: 425px;
+    width: 350px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -67,7 +67,7 @@
     }
 
     .section {
-        font-size: 3.7vw;
-        letter-spacing: 0.33vw;
+        font-size: 4.3vw;
+        letter-spacing: 0.43vw;
     }
 }
