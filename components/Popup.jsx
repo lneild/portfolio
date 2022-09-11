@@ -3,17 +3,27 @@ import styles from "../styles/Popup.module.css";
 import Button from "./Button";
 import Polaroid from "./Polaroid";
 
-import { disableBodyScroll, clearAllBodyScrollLocks } from "body-scroll-lock";
-
 export default function Popup(props) {
-    const popupRef = useRef(null);
     useEffect(() => {
-        const ref = popupRef.current;
-        disableBodyScroll(ref, { allowTouchMove: ref });
-        return () => clearAllBodyScrollLocks();
+        const scrollPosition = window.pageYOffset;
+        const enable = () => {
+            document.body.style.overflow = "hidden";
+            document.body.style.position = "fixed";
+            document.body.style.top = `-${scrollPosition}px`;
+            document.body.style.width = "100%";
+        };
+        const disable = () => {
+            document.body.style.removeProperty("overflow");
+            document.body.style.removeProperty("position");
+            document.body.style.removeProperty("top");
+            document.body.style.removeProperty("width");
+            window.scrollTo(0, scrollPosition);
+        };
+        enable();
+        return disable;
     });
     return (
-        <div className={styles.viewWindow} ref={popupRef}>
+        <div className={styles.viewWindow}>
             <div className={styles.card}>
                 <div className={styles.title}>{props.title}</div>
                 <div className={styles.content}>
