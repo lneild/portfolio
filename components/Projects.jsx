@@ -18,7 +18,7 @@ export default function Projects() {
             </div>
 
             <div className={styles.content}>
-                <div className={styles.title}>EXPERIENCE</div>
+                <div className={styles.title}>WORK</div>
 
                 <div className={styles.projects}>
                     <Link href="/ligo">

@@ -53,7 +53,7 @@ export default function Nav() {
                     smooth={true}
                     duration={500}
                 >
-                    about me
+                    about
                 </Link>
                 <Link
                     className={styles.section}
@@ -62,7 +62,7 @@ export default function Nav() {
                     smooth={true}
                     duration={500}
                 >
-                    experience
+                    work
                 </Link>
                 <Link
                     className={styles.section}
