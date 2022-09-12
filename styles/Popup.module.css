@@ -71,7 +71,7 @@
 @media only screen and (max-width: 815px) {
     .card {
         width: 350px;
-        height: 670px;
+        height: 600px;
     }
 
     .title {
@@ -85,7 +85,7 @@
         padding-left: 22px;
         padding-right: 22px;
         overflow-y: scroll;
-        height: 545px;
+        height: 490px;
         width: 325px;
         margin-bottom: 20px;
     }

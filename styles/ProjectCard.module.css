@@ -11,8 +11,8 @@
 
 .backgroundPic {
     position: relative;
-    width: 475px;
-    min-height: 550px;
+    width: 400px;
+    min-height: 450px;
     overflow: hidden;
     border: 10px solid white;
 }
