@@ -22,10 +22,10 @@ const popupData = {
                 York Times called him &quot;
                 <Link href="https://www.nytimes.com/1996/01/31/us/w-e-hanford-87-chemist-who-changed-world.html">
                     <a className={styles.linkStyle}>
-                        The chemist who changed the world.
+                        The chemist who changed the world
                     </a>
-                </Link>{" "}
-                &quot; This family legacy has fueled my creative and
+                </Link>
+                .&quot; This family legacy has fueled my creative and
                 entrepreneurial drive, reminding me every day that we are all
                 capable of contributing important new discoveries to society.
                 The driving force behind my passion for STEM has been the
