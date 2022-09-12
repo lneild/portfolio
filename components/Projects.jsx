@@ -7,6 +7,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
     return (
         <div id="projects" className={styles.experience}>
+            <div className={styles.newBackground}></div>
             <div className={styles.pic}>
                 <Image
                     src="/txture.jpg"

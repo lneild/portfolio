@@ -7,8 +7,8 @@ import { useWindowHeight } from "../hooks/useWindowHeight";
 export default function Hero(props) {
     const who = [
         "data scientist",
-        "fitness enthusiast",
-        "programmer",
+        // "fitness enthusiast",
+        // "programmer",
         "nature wanderer",
         "full stack developer",
         "yoga lover",

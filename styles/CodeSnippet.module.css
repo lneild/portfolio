@@ -11,7 +11,7 @@
 .container pre {
     margin: 0em !important;
     margin-right: 20px;
-    font-size: 0.64vw;
+    font-size: 0.625vw;
     height: 26vw;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -24,5 +24,6 @@
     .container pre {
         width: 88vw;
         height: fit-content;
+        font-size: 0.85vh;
     }
 }

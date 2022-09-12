@@ -44,7 +44,7 @@ const popupData = {
     },
     future: {
         description: `I aspire to be part of an innovative and collaborative company, working on exciting, cutting-edge projects. I hope to work with compelling, ambitious teammates who are passionate about our shared mission. When I envision the future, I see myself as engrossed in my work, positively engaged with my community, and living a purposeful life.`,
-        picTitle: "Career",
+        picTitle: "Software Engineer",
         picDate: "",
         src: "/headshot.jpg",
     },

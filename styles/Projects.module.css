@@ -8,6 +8,14 @@
     height: fit-content;
 }
 
+.newBackground {
+    position: fixed;
+    background-color: rgb(33, 43, 65);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
 .pic {
     position: absolute;
     left: 0px;
