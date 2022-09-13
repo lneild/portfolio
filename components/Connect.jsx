@@ -19,7 +19,11 @@ export default function Connect() {
                                 />
                             </div>
                         </Link>
-                        <Link href="https://github.com/lneild">
+                        <a
+                            target="_blank"
+                            href="https://github.com/lneild"
+                            rel="noopener noreferrer"
+                        >
                             <div className={styles.social}>
                                 <Image
                                     src="/github.png"
@@ -28,8 +32,12 @@ export default function Connect() {
                                     height="30"
                                 />
                             </div>
-                        </Link>
-                        <Link href="https://www.linkedin.com/in/lainey-neild/">
+                        </a>
+                        <a
+                            target="_blank"
+                            href="https://www.linkedin.com/in/lainey-neild/"
+                            rel="noopener noreferrer"
+                        >
                             <div className={styles.social}>
                                 <Image
                                     src="/linkedin.png"
@@ -38,7 +46,7 @@ export default function Connect() {
                                     height="30"
                                 />
                             </div>
-                        </Link>
+                        </a>
                         <Link href="tel:+19144133732">
                             <div className={styles.social}>
                                 <Image

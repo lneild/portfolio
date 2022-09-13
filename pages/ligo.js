@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Image from "next/image";
 import styles from "../styles/Ligo.module.css";
 import MyWorkCarousel from "../components/MyWorkCarousel";
+import BackNav from "../components/BackNav";
 
 // const logoData = {
 //     sql: "/sql-server.png",
@@ -72,6 +73,7 @@ export default function Ligo() {
         <div id="ligo" className={styles.ligo}>
             {/* <Nav /> */}
             {/* <HashLink to="/index#projects">X</HashLink> */}
+            <BackNav />
             <div id="header" className={styles.header}>
                 <div className={styles.logo}>
                     <Image

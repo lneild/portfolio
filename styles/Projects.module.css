@@ -8,13 +8,14 @@
     height: fit-content;
 }
 
-.newBackground {
+/* .newBackground {
     position: fixed;
     background-color: rgb(33, 43, 65);
+    border: 1px solid yellow;
     width: 100vw;
     height: 100vh;
     z-index: -1;
-}
+} */
 
 .pic {
     position: absolute;

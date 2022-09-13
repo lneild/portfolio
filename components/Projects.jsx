@@ -7,7 +7,7 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
     return (
         <div id="projects" className={styles.experience}>
-            <div className={styles.newBackground}></div>
+            {/* <div className={styles.newBackground}></div> */}
             <div className={styles.pic}>
                 <Image
                     src="/txture.jpg"
@@ -22,7 +22,8 @@ export default function Projects() {
                 <div className={styles.title}>WORK</div>
 
                 <div className={styles.projects}>
-                    <Link href="/ligo">
+                    <a id="ligo" />
+                    <Link id={"ligo"} href="/ligo">
                         <div className={styles.card}>
                             <ProjectCard
                                 title="Ligo"

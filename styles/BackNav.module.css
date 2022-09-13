@@ -1,0 +1,25 @@
+.btn {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    min-width: 80px;
+    height: 40px;
+    text-align: center;
+    /* margin-left: 15px; */
+    /* margin-top: 15px; */
+    background-color: rgb(165, 168, 172);
+    color: rgb(33, 43, 65);
+    font-family: "Exo", sans-serif;
+    letter-spacing: 1.3px;
+    font-size: 13px;
+    width: fit-content;
+    padding: 15px;
+    transition: 0.125s ease-out;
+
+    /* shape */
+    clip-path: polygon(100% 0%, 85% 50%, 100% 100%, 20% 100%, 0% 50%, 20% 0%);
+}
+
+.btn:hover {
+    background-color: white;
+}
