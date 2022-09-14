@@ -9,7 +9,7 @@ import BackNav from "../components/BackNav";
 //     notion: "/notion.png",
 //     ga: "/google-analytics.png",
 // };
-
+const BACK_NAV_WIDTH = 80;
 export default function Ligo() {
     // const [isHovered, setIsHovered] = useState(false);
 
@@ -73,8 +73,10 @@ export default function Ligo() {
         <div id="ligo" className={styles.ligo}>
             {/* <Nav /> */}
             {/* <HashLink to="/index#projects">X</HashLink> */}
-            <BackNav />
             <div id="header" className={styles.header}>
+                <div style={{ width: BACK_NAV_WIDTH }}>
+                    <BackNav />
+                </div>
                 <div className={styles.logo}>
                     <Image
                         src="/ligo_white.png"
@@ -84,6 +86,7 @@ export default function Ligo() {
                         objectPosition="center center"
                     />
                 </div>
+                <div style={{ width: BACK_NAV_WIDTH }}></div>
             </div>
             <div className={styles.background}>
                 <div className={styles.workTitle}>data science intern</div>

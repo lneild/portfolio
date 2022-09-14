@@ -16,6 +16,7 @@ export default function Home() {
                     <Hero />
                     <AboutMe />
                     <Projects />
+                    {/* <div className={styles.newBackground}></div> */}
                     <Connect />
                 </div>
             </div>

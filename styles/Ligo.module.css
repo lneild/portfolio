@@ -12,9 +12,11 @@
 
 .header {
     margin-top: 15px;
+    padding: 0px 25px;
+    box-sizing: border-box;
     width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: fit-content;
 }
 
@@ -22,7 +24,6 @@
     min-width: 375px;
     min-height: 143px;
     position: relative;
-    margin-top: 5px;
 }
 
 .background {

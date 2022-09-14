@@ -4,8 +4,10 @@ import Link from "next/link";
 
 export default function BackNav() {
     return (
-        <div className={styles.btn}>
-            <Link href="/#ligo">WORK</Link>
-        </div>
+        <Link href="/#ligo">
+            <div className={styles.btn}>
+                ← <span>Work</span>
+            </div>
+        </Link>
     );
 }

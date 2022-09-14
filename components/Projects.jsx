@@ -22,25 +22,22 @@ export default function Projects() {
                 <div className={styles.title}>WORK</div>
 
                 <div className={styles.projects}>
-                    <a id="ligo" />
-                    <Link id={"ligo"} href="/ligo">
-                        <div className={styles.card}>
-                            <ProjectCard
-                                title="Ligo"
-                                date="'22"
-                                src="/amsterdam.jpg"
-                            />
-                        </div>
-                    </Link>
-                    <Link className={styles.card} href="/rockefeller">
-                        <div className={styles.card}>
-                            <ProjectCard
-                                title="Rockefeller"
-                                date="'20"
-                                src="/nyc.jpg"
-                            />
-                        </div>
-                    </Link>
+                    <div className={styles.card}>
+                        <ProjectCard
+                            title="Ligo"
+                            date="'22"
+                            src="/amsterdam.jpg"
+                            href="ligo"
+                        />
+                    </div>
+                    <div className={styles.card}>
+                        <ProjectCard
+                            title="Rockefeller"
+                            date="'20"
+                            src="/nyc.jpg"
+                            href="rockefeller"
+                        />
+                    </div>
                     {/* <div className={styles.card}>
                         <ProjectCard
                             title="Ligo"
