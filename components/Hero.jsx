@@ -9,7 +9,7 @@ export default function Hero(props) {
         "data scientist",
         // "fitness enthusiast",
         // "programmer",
-        "nature wanderer",
+        "BALABLA CLIMATE CHANGE",
         "full stack developer",
         "yoga lover",
     ];
